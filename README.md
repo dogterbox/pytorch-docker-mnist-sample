@@ -5,20 +5,23 @@ Docker build
 docker build -t mnist .
 ```
 
-Docker run
+Quick start
 ```bash
-docker run --rm -it \
-            -v ./data:/workspace/data \
+docker run --rm -it --gpus=all mnist python mnist.py
+```
+
+---
+Docker run with `sleep infinity`
+```bash
+docker run --rm -it -d \
             --gpus all \
             --name mnist \
             mnist \
-            sleep infinite
-            
+            sleep infinity
 ```
 
 Attach container and run `mnist.py`
-
 ```bash
 docker exec -it mnist bash
-/workspace$ python mnist.py
+/workspace# python mnist.py
 ```
