@@ -1,6 +1,4 @@
 FROM pytorch/pytorch
-LABEL maintainer="ruihirano"
 
-COPY . /workspace
-
-RUN pip install --upgrade pip && pip install -r requirement.txt 
+RUN pip install --upgrade pip
+COPY mnist.py /workspace/mnist.py
