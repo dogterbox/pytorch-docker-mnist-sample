@@ -3,8 +3,8 @@
 ## Quick start
 DockerHub: https://hub.docker.com/r/dogterbox/mnist
 ```bash
-docker pull dogterbox/pytorch-docker-mnist-sample
-docker run --rm -it --gpus=all dogterbox/pytorch-docker-mnist-sample python mnist.py
+docker pull dogterbox/mnist
+docker run --rm -it --gpus=all dogterbox/mnist python mnist.py
 ```
 
 ---
