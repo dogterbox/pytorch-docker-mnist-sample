@@ -1,7 +1,7 @@
 # Pytorch with Docker Sample
 
 ## Quick start
-DockerHub: https://hub.docker.com/r/dogterbox/pytorch-docker-mnist-sample
+DockerHub: https://hub.docker.com/r/dogterbox/mnist
 ```bash
 docker pull dogterbox/pytorch-docker-mnist-sample
 docker run --rm -it --gpus=all dogterbox/pytorch-docker-mnist-sample python mnist.py
